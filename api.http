@@ -1,8 +1,27 @@
+### create event
 POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-  "title": "NLW Unite",
-  "details": "Programatiooooon",
-  "maximumAttendees": 100
+  "title": "Novo evento",
+  "details": "Sem detalhes",
+  "maximumAttendees": 1
 }
+
+### create attendee
+POST http://localhost:3333/events/df06c2a3-b6a6-4c20-a656-0f1ff23aa481/attendees
+Content-Type: application/json
+
+{
+  "name": "Micael Inácio",
+  "email": "micael2@gmail.com"
+}
+
+### get event
+GET http://localhost:3333/events/df06c2a3-b6a6-4c20-a656-0f1ff23aa481
+###
+GET http://localhost:3333/events/b043c000-8775-4109-b074-f696d19f3be6
+
+
+### get attendee
+GET http://localhost:3333/attendees/2/badge
