@@ -3,7 +3,7 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-  "title": "Novo evento",
+  "title": "Evento especial",
   "details": "Sem detalhes",
   "maximumAttendees": 1
 }
@@ -23,5 +23,13 @@ GET http://localhost:3333/events/df06c2a3-b6a6-4c20-a656-0f1ff23aa481
 GET http://localhost:3333/events/b043c000-8775-4109-b074-f696d19f3be6
 
 
-### get attendee
+### get attendee badge
 GET http://localhost:3333/attendees/2/badge
+
+
+### check-in
+GET http://localhost:3333/attendees/2/check-in
+
+
+### get event attendees
+GET http://localhost:3333/events/b043c000-8775-4109-b074-f696d19f3be6/attendees?query=mica
